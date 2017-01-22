@@ -6,18 +6,18 @@
 //  Copyright © 2016年 FU. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FUViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <CoreVideo/CoreVideo.h>
 #import <Photos/Photos.h>
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
-@interface ViewController ()<PHPhotoLibraryChangeObserver>
+@interface FUViewController ()<PHPhotoLibraryChangeObserver>
 
 @end
 
-@implementation ViewController
+@implementation FUViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

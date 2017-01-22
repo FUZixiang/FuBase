@@ -11,7 +11,7 @@
 #import <CoreVideo/CoreVideo.h>
 #import <Photos/Photos.h>
 
-@interface ViewController : UIViewController<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface FUViewController : UIViewController<UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, strong) PHFetchResult *assetsFetchResults;
 

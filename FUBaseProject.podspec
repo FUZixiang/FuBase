@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                     futest
                    DESC
 
-  s.homepage     = "https://github.com/FUZixiang/FUBaseProject"
+  s.homepage     = "https://github.com/FUZixiang/FuBase.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "FUZixiang" => "3256140673@qq.com" }
+  s.author             = { "Orta Therox" => "3256140673@qq.com" }
   # Or just: s.author    = "FUZixiang"
   # s.authors            = { "FUZixiang" => "email@address.com" }
   # s.social_media_url   = "http://twitter.com/FUZixiang"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/FUZixiang/FUBaseProject.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/FUZixiang/FuBase.git", :tag => "v1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
