@@ -16,6 +16,10 @@
 		C5959B9B1E358BA400C07201 /* myBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B9A1E358BA400C07201 /* myBaseTests.m */; };
 		C5959BA61E358BA400C07201 /* myBaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959BA51E358BA400C07201 /* myBaseUITests.m */; };
 		C5959BB61E358BD900C07201 /* FUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959BB51E358BD900C07201 /* FUViewController.m */; };
+		C5959BBE1E358DA500C07201 /* AES256.php in Resources */ = {isa = PBXBuildFile; fileRef = C5959BB81E358DA500C07201 /* AES256.php */; };
+		C5959BBF1E358DA500C07201 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959BBA1E358DA500C07201 /* NSData+AES256.m */; };
+		C5959BC01E358DA500C07201 /* NSString+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959BBC1E358DA500C07201 /* NSString+AES256.m */; };
+		C5959BC11E358DA500C07201 /* yyyy.java in Sources */ = {isa = PBXBuildFile; fileRef = C5959BBD1E358DA500C07201 /* yyyy.java */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,12 @@
 		C5959BA71E358BA400C07201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5959BB41E358BD900C07201 /* FUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUViewController.h; sourceTree = "<group>"; };
 		C5959BB51E358BD900C07201 /* FUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUViewController.m; sourceTree = "<group>"; };
+		C5959BB81E358DA500C07201 /* AES256.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = AES256.php; sourceTree = "<group>"; };
+		C5959BB91E358DA500C07201 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		C5959BBA1E358DA500C07201 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		C5959BBB1E358DA500C07201 /* NSString+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES256.h"; sourceTree = "<group>"; };
+		C5959BBC1E358DA500C07201 /* NSString+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES256.m"; sourceTree = "<group>"; };
+		C5959BBD1E358DA500C07201 /* yyyy.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = yyyy.java; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +157,24 @@
 		C5959BB31E358BD900C07201 /* FUBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				C5959BB71E358DA500C07201 /* AES256 */,
 				C5959BB41E358BD900C07201 /* FUViewController.h */,
 				C5959BB51E358BD900C07201 /* FUViewController.m */,
 			);
 			path = FUBaseProject;
+			sourceTree = "<group>";
+		};
+		C5959BB71E358DA500C07201 /* AES256 */ = {
+			isa = PBXGroup;
+			children = (
+				C5959BB81E358DA500C07201 /* AES256.php */,
+				C5959BB91E358DA500C07201 /* NSData+AES256.h */,
+				C5959BBA1E358DA500C07201 /* NSData+AES256.m */,
+				C5959BBB1E358DA500C07201 /* NSString+AES256.h */,
+				C5959BBC1E358DA500C07201 /* NSString+AES256.m */,
+				C5959BBD1E358DA500C07201 /* yyyy.java */,
+			);
+			path = AES256;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +288,7 @@
 			files = (
 				C5959B901E358BA400C07201 /* LaunchScreen.storyboard in Resources */,
 				C5959B8D1E358BA400C07201 /* Assets.xcassets in Resources */,
+				C5959BBE1E358DA500C07201 /* AES256.php in Resources */,
 				C5959B8B1E358BA400C07201 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5959B881E358BA400C07201 /* ViewController.m in Sources */,
+				C5959BBF1E358DA500C07201 /* NSData+AES256.m in Sources */,
 				C5959B851E358BA400C07201 /* AppDelegate.m in Sources */,
+				C5959BC11E358DA500C07201 /* yyyy.java in Sources */,
+				C5959BC01E358DA500C07201 /* NSString+AES256.m in Sources */,
 				C5959B821E358BA400C07201 /* main.m in Sources */,
 				C5959BB61E358BD900C07201 /* FUViewController.m in Sources */,
 			);
