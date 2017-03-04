@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C54BEC741E6A511300A9465A /* bankData.json in Resources */ = {isa = PBXBuildFile; fileRef = C54BEC731E6A511300A9465A /* bankData.json */; };
+		C54BEC7A1E6A8AE900A9465A /* FUbankDataArray.json in Resources */ = {isa = PBXBuildFile; fileRef = C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */; };
+		C54BEC7B1E6A8AE900A9465A /* FUbankDataDict.json in Resources */ = {isa = PBXBuildFile; fileRef = C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */; };
+		C54BEC7C1E6A8AE900A9465A /* FUbankData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54BEC791E6A8AE900A9465A /* FUbankData.plist */; };
 		C5959B821E358BA400C07201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B811E358BA400C07201 /* main.m */; };
 		C5959B851E358BA400C07201 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B841E358BA400C07201 /* AppDelegate.m */; };
 		C5959B881E358BA400C07201 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B871E358BA400C07201 /* ViewController.m */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C54BEC731E6A511300A9465A /* bankData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bankData.json; sourceTree = "<group>"; };
+		C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FUbankDataArray.json; sourceTree = "<group>"; };
+		C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FUbankDataDict.json; sourceTree = "<group>"; };
+		C54BEC791E6A8AE900A9465A /* FUbankData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FUbankData.plist; sourceTree = "<group>"; };
 		C5959B7D1E358BA400C07201 /* myBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5959B811E358BA400C07201 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5959B831E358BA400C07201 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 			children = (
 				C5959B831E358BA400C07201 /* AppDelegate.h */,
 				C5959B841E358BA400C07201 /* AppDelegate.m */,
+				C54BEC731E6A511300A9465A /* bankData.json */,
 				C5959B861E358BA400C07201 /* ViewController.h */,
 				C5959B871E358BA400C07201 /* ViewController.m */,
 				C5959B891E358BA400C07201 /* Main.storyboard */,
@@ -167,6 +176,9 @@
 		C5959BB71E358DA500C07201 /* AES256 */ = {
 			isa = PBXGroup;
 			children = (
+				C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */,
+				C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */,
+				C54BEC791E6A8AE900A9465A /* FUbankData.plist */,
 				C5959BB81E358DA500C07201 /* AES256.php */,
 				C5959BB91E358DA500C07201 /* NSData+AES256.h */,
 				C5959BBA1E358DA500C07201 /* NSData+AES256.m */,
@@ -286,10 +298,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54BEC7A1E6A8AE900A9465A /* FUbankDataArray.json in Resources */,
+				C54BEC741E6A511300A9465A /* bankData.json in Resources */,
 				C5959B901E358BA400C07201 /* LaunchScreen.storyboard in Resources */,
+				C54BEC7C1E6A8AE900A9465A /* FUbankData.plist in Resources */,
 				C5959B8D1E358BA400C07201 /* Assets.xcassets in Resources */,
 				C5959BBE1E358DA500C07201 /* AES256.php in Resources */,
 				C5959B8B1E358BA400C07201 /* Main.storyboard in Resources */,
+				C54BEC7B1E6A8AE900A9465A /* FUbankDataDict.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
