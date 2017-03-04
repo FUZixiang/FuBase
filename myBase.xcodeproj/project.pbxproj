@@ -11,6 +11,19 @@
 		C54BEC7A1E6A8AE900A9465A /* FUbankDataArray.json in Resources */ = {isa = PBXBuildFile; fileRef = C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */; };
 		C54BEC7B1E6A8AE900A9465A /* FUbankDataDict.json in Resources */ = {isa = PBXBuildFile; fileRef = C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */; };
 		C54BEC7C1E6A8AE900A9465A /* FUbankData.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54BEC791E6A8AE900A9465A /* FUbankData.plist */; };
+		C54BEC801E6AA34D00A9465A /* FUBankDataDo.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC7F1E6AA34D00A9465A /* FUBankDataDo.m */; };
+		C54BEC841E6AA87F00A9465A /* FUGetOperatorsType.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC831E6AA87F00A9465A /* FUGetOperatorsType.m */; };
+		C54BEC881E6AAC6700A9465A /* FUGetAllSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC871E6AAC6700A9465A /* FUGetAllSystemInfo.m */; };
+		C54BEC8F1E6AB06D00A9465A /* FUTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC8E1E6AB06D00A9465A /* FUTools.m */; };
+		C54BEC9A1E6AB0E600A9465A /* CCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC931E6AB0E600A9465A /* CCLocationManager.m */; };
+		C54BEC9B1E6AB0E600A9465A /* mapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC951E6AB0E600A9465A /* mapLocation.m */; };
+		C54BEC9C1E6AB0E600A9465A /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC971E6AB0E600A9465A /* MMLocationManager.m */; };
+		C54BEC9D1E6AB0E600A9465A /* WPAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC991E6AB0E600A9465A /* WPAnnotation.m */; };
+		C54BECA51E6AB31300A9465A /* MarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA01E6AB31300A9465A /* MarqueeLabel.m */; };
+		C54BECA61E6AB31300A9465A /* messageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA21E6AB31300A9465A /* messageView.m */; };
+		C54BECA71E6AB31300A9465A /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA41E6AB31300A9465A /* Notifier.m */; };
+		C54BECAA1E6AB31F00A9465A /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA91E6AB31F00A9465A /* UIImage+scale.m */; };
+		C54BECAC1E6AB32B00A9465A /* fu.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54BECAB1E6AB32B00A9465A /* fu.plist */; };
 		C5959B821E358BA400C07201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B811E358BA400C07201 /* main.m */; };
 		C5959B851E358BA400C07201 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B841E358BA400C07201 /* AppDelegate.m */; };
 		C5959B881E358BA400C07201 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B871E358BA400C07201 /* ViewController.m */; };
@@ -44,10 +57,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C54BEC731E6A511300A9465A /* bankData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bankData.json; sourceTree = "<group>"; };
-		C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FUbankDataArray.json; sourceTree = "<group>"; };
-		C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FUbankDataDict.json; sourceTree = "<group>"; };
-		C54BEC791E6A8AE900A9465A /* FUbankData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FUbankData.plist; sourceTree = "<group>"; };
+		C54BEC731E6A511300A9465A /* bankData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bankData.json; path = ../../myBase/bankData.json; sourceTree = "<group>"; };
+		C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FUbankDataArray.json; path = ../AES256/FUbankDataArray.json; sourceTree = "<group>"; };
+		C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FUbankDataDict.json; path = ../AES256/FUbankDataDict.json; sourceTree = "<group>"; };
+		C54BEC791E6A8AE900A9465A /* FUbankData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FUbankData.plist; path = ../AES256/FUbankData.plist; sourceTree = "<group>"; };
+		C54BEC7E1E6AA34D00A9465A /* FUBankDataDo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUBankDataDo.h; sourceTree = "<group>"; };
+		C54BEC7F1E6AA34D00A9465A /* FUBankDataDo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUBankDataDo.m; sourceTree = "<group>"; };
+		C54BEC821E6AA87F00A9465A /* FUGetOperatorsType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUGetOperatorsType.h; sourceTree = "<group>"; };
+		C54BEC831E6AA87F00A9465A /* FUGetOperatorsType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUGetOperatorsType.m; sourceTree = "<group>"; };
+		C54BEC861E6AAC6700A9465A /* FUGetAllSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUGetAllSystemInfo.h; sourceTree = "<group>"; };
+		C54BEC871E6AAC6700A9465A /* FUGetAllSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUGetAllSystemInfo.m; sourceTree = "<group>"; };
+		C54BEC8D1E6AB06D00A9465A /* FUTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUTools.h; sourceTree = "<group>"; };
+		C54BEC8E1E6AB06D00A9465A /* FUTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUTools.m; sourceTree = "<group>"; };
+		C54BEC921E6AB0E600A9465A /* CCLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLocationManager.h; sourceTree = "<group>"; };
+		C54BEC931E6AB0E600A9465A /* CCLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLocationManager.m; sourceTree = "<group>"; };
+		C54BEC941E6AB0E600A9465A /* mapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapLocation.h; sourceTree = "<group>"; };
+		C54BEC951E6AB0E600A9465A /* mapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapLocation.m; sourceTree = "<group>"; };
+		C54BEC961E6AB0E600A9465A /* MMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLocationManager.h; sourceTree = "<group>"; };
+		C54BEC971E6AB0E600A9465A /* MMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLocationManager.m; sourceTree = "<group>"; };
+		C54BEC981E6AB0E600A9465A /* WPAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAnnotation.h; sourceTree = "<group>"; };
+		C54BEC991E6AB0E600A9465A /* WPAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAnnotation.m; sourceTree = "<group>"; };
+		C54BEC9F1E6AB31300A9465A /* MarqueeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeLabel.h; sourceTree = "<group>"; };
+		C54BECA01E6AB31300A9465A /* MarqueeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeLabel.m; sourceTree = "<group>"; };
+		C54BECA11E6AB31300A9465A /* messageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageView.h; sourceTree = "<group>"; };
+		C54BECA21E6AB31300A9465A /* messageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageView.m; sourceTree = "<group>"; };
+		C54BECA31E6AB31300A9465A /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifier.h; sourceTree = "<group>"; };
+		C54BECA41E6AB31300A9465A /* Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notifier.m; sourceTree = "<group>"; };
+		C54BECA81E6AB31F00A9465A /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
+		C54BECA91E6AB31F00A9465A /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
+		C54BECAB1E6AB32B00A9465A /* fu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fu.plist; sourceTree = "<group>"; };
 		C5959B7D1E358BA400C07201 /* myBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5959B811E358BA400C07201 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5959B831E358BA400C07201 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +137,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C54BEC7D1E6AA2E000A9465A /* BankNumberForName */ = {
+			isa = PBXGroup;
+			children = (
+				C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */,
+				C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */,
+				C54BEC791E6A8AE900A9465A /* FUbankData.plist */,
+				C54BEC731E6A511300A9465A /* bankData.json */,
+				C54BEC7E1E6AA34D00A9465A /* FUBankDataDo.h */,
+				C54BEC7F1E6AA34D00A9465A /* FUBankDataDo.m */,
+			);
+			path = BankNumberForName;
+			sourceTree = "<group>";
+		};
+		C54BEC811E6AA6D200A9465A /* getOperatorsType */ = {
+			isa = PBXGroup;
+			children = (
+				C54BEC821E6AA87F00A9465A /* FUGetOperatorsType.h */,
+				C54BEC831E6AA87F00A9465A /* FUGetOperatorsType.m */,
+			);
+			path = getOperatorsType;
+			sourceTree = "<group>";
+		};
+		C54BEC851E6AAC5D00A9465A /* FUGetAllSystemInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C54BEC861E6AAC6700A9465A /* FUGetAllSystemInfo.h */,
+				C54BEC871E6AAC6700A9465A /* FUGetAllSystemInfo.m */,
+			);
+			path = FUGetAllSystemInfo;
+			sourceTree = "<group>";
+		};
+		C54BEC891E6AAE9E00A9465A /* FUTools */ = {
+			isa = PBXGroup;
+			children = (
+				C54BEC9E1E6AB31300A9465A /* util */,
+				C54BEC901E6AB0E600A9465A /* FUMMLocationManager */,
+				C54BEC8D1E6AB06D00A9465A /* FUTools.h */,
+				C54BEC8E1E6AB06D00A9465A /* FUTools.m */,
+				C54BECA81E6AB31F00A9465A /* UIImage+scale.h */,
+				C54BECA91E6AB31F00A9465A /* UIImage+scale.m */,
+				C54BECAB1E6AB32B00A9465A /* fu.plist */,
+			);
+			path = FUTools;
+			sourceTree = "<group>";
+		};
+		C54BEC901E6AB0E600A9465A /* FUMMLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				C54BEC911E6AB0E600A9465A /* CCLocation */,
+				C54BEC941E6AB0E600A9465A /* mapLocation.h */,
+				C54BEC951E6AB0E600A9465A /* mapLocation.m */,
+				C54BEC961E6AB0E600A9465A /* MMLocationManager.h */,
+				C54BEC971E6AB0E600A9465A /* MMLocationManager.m */,
+				C54BEC981E6AB0E600A9465A /* WPAnnotation.h */,
+				C54BEC991E6AB0E600A9465A /* WPAnnotation.m */,
+			);
+			path = FUMMLocationManager;
+			sourceTree = "<group>";
+		};
+		C54BEC911E6AB0E600A9465A /* CCLocation */ = {
+			isa = PBXGroup;
+			children = (
+				C54BEC921E6AB0E600A9465A /* CCLocationManager.h */,
+				C54BEC931E6AB0E600A9465A /* CCLocationManager.m */,
+			);
+			path = CCLocation;
+			sourceTree = "<group>";
+		};
+		C54BEC9E1E6AB31300A9465A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				C54BEC9F1E6AB31300A9465A /* MarqueeLabel.h */,
+				C54BECA01E6AB31300A9465A /* MarqueeLabel.m */,
+				C54BECA11E6AB31300A9465A /* messageView.h */,
+				C54BECA21E6AB31300A9465A /* messageView.m */,
+				C54BECA31E6AB31300A9465A /* Notifier.h */,
+				C54BECA41E6AB31300A9465A /* Notifier.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		C5959B741E358BA100C07201 = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +244,6 @@
 			children = (
 				C5959B831E358BA400C07201 /* AppDelegate.h */,
 				C5959B841E358BA400C07201 /* AppDelegate.m */,
-				C54BEC731E6A511300A9465A /* bankData.json */,
 				C5959B861E358BA400C07201 /* ViewController.h */,
 				C5959B871E358BA400C07201 /* ViewController.m */,
 				C5959B891E358BA400C07201 /* Main.storyboard */,
@@ -166,6 +284,10 @@
 		C5959BB31E358BD900C07201 /* FUBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				C54BEC891E6AAE9E00A9465A /* FUTools */,
+				C54BEC851E6AAC5D00A9465A /* FUGetAllSystemInfo */,
+				C54BEC811E6AA6D200A9465A /* getOperatorsType */,
+				C54BEC7D1E6AA2E000A9465A /* BankNumberForName */,
 				C5959BB71E358DA500C07201 /* AES256 */,
 				C5959BB41E358BD900C07201 /* FUViewController.h */,
 				C5959BB51E358BD900C07201 /* FUViewController.m */,
@@ -176,9 +298,6 @@
 		C5959BB71E358DA500C07201 /* AES256 */ = {
 			isa = PBXGroup;
 			children = (
-				C54BEC771E6A8AE900A9465A /* FUbankDataArray.json */,
-				C54BEC781E6A8AE900A9465A /* FUbankDataDict.json */,
-				C54BEC791E6A8AE900A9465A /* FUbankData.plist */,
 				C5959BB81E358DA500C07201 /* AES256.php */,
 				C5959BB91E358DA500C07201 /* NSData+AES256.h */,
 				C5959BBA1E358DA500C07201 /* NSData+AES256.m */,
@@ -304,6 +423,7 @@
 				C54BEC7C1E6A8AE900A9465A /* FUbankData.plist in Resources */,
 				C5959B8D1E358BA400C07201 /* Assets.xcassets in Resources */,
 				C5959BBE1E358DA500C07201 /* AES256.php in Resources */,
+				C54BECAC1E6AB32B00A9465A /* fu.plist in Resources */,
 				C5959B8B1E358BA400C07201 /* Main.storyboard in Resources */,
 				C54BEC7B1E6A8AE900A9465A /* FUbankDataDict.json in Resources */,
 			);
@@ -330,11 +450,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54BEC9B1E6AB0E600A9465A /* mapLocation.m in Sources */,
+				C54BEC9A1E6AB0E600A9465A /* CCLocationManager.m in Sources */,
 				C5959B881E358BA400C07201 /* ViewController.m in Sources */,
 				C5959BBF1E358DA500C07201 /* NSData+AES256.m in Sources */,
 				C5959B851E358BA400C07201 /* AppDelegate.m in Sources */,
 				C5959BC11E358DA500C07201 /* yyyy.java in Sources */,
+				C54BEC9D1E6AB0E600A9465A /* WPAnnotation.m in Sources */,
+				C54BEC881E6AAC6700A9465A /* FUGetAllSystemInfo.m in Sources */,
+				C54BEC841E6AA87F00A9465A /* FUGetOperatorsType.m in Sources */,
+				C54BECAA1E6AB31F00A9465A /* UIImage+scale.m in Sources */,
+				C54BECA51E6AB31300A9465A /* MarqueeLabel.m in Sources */,
+				C54BEC9C1E6AB0E600A9465A /* MMLocationManager.m in Sources */,
 				C5959BC01E358DA500C07201 /* NSString+AES256.m in Sources */,
+				C54BEC8F1E6AB06D00A9465A /* FUTools.m in Sources */,
+				C54BECA71E6AB31300A9465A /* Notifier.m in Sources */,
+				C54BEC801E6AA34D00A9465A /* FUBankDataDo.m in Sources */,
+				C54BECA61E6AB31300A9465A /* messageView.m in Sources */,
 				C5959B821E358BA400C07201 /* main.m in Sources */,
 				C5959BB61E358BD900C07201 /* FUViewController.m in Sources */,
 			);
@@ -431,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -472,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -485,6 +617,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BC4VZEXR8E;
 				INFOPLIST_FILE = myBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FuBase.fuzx.myBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,6 +630,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BC4VZEXR8E;
 				INFOPLIST_FILE = myBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FuBase.fuzx.myBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
