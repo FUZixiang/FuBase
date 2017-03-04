@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FUBaseProject"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "test"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/FUZixiang/FuBase.git", :tag => "v1.0.1" }
+  s.source       = { :git => "https://github.com/FUZixiang/FuBase.git", :tag => "v1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
