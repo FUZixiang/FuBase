@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "FUGetAllSystemInfo.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [self getBankName];
+    NSString *strFFF=@"111111";
+    
+    
+    
+    NSLog(@"%@\n",[FUGetAllSystemInfo getMd5_32Bit_uppercaseString:strFFF with:3]);
+    NSLog(@"%@\n",[FUGetAllSystemInfo getMd5_32Bit_String:strFFF with:3]);
+
+    
     return YES;
 }
 -(void)getBankName

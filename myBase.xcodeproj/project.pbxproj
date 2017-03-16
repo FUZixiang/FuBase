@@ -19,9 +19,6 @@
 		C54BEC9B1E6AB0E600A9465A /* mapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC951E6AB0E600A9465A /* mapLocation.m */; };
 		C54BEC9C1E6AB0E600A9465A /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC971E6AB0E600A9465A /* MMLocationManager.m */; };
 		C54BEC9D1E6AB0E600A9465A /* WPAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BEC991E6AB0E600A9465A /* WPAnnotation.m */; };
-		C54BECA51E6AB31300A9465A /* MarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA01E6AB31300A9465A /* MarqueeLabel.m */; };
-		C54BECA61E6AB31300A9465A /* messageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA21E6AB31300A9465A /* messageView.m */; };
-		C54BECA71E6AB31300A9465A /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA41E6AB31300A9465A /* Notifier.m */; };
 		C54BECAA1E6AB31F00A9465A /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BECA91E6AB31F00A9465A /* UIImage+scale.m */; };
 		C54BECAC1E6AB32B00A9465A /* fu.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54BECAB1E6AB32B00A9465A /* fu.plist */; };
 		C5959B821E358BA400C07201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5959B811E358BA400C07201 /* main.m */; };
@@ -77,12 +74,6 @@
 		C54BEC971E6AB0E600A9465A /* MMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLocationManager.m; sourceTree = "<group>"; };
 		C54BEC981E6AB0E600A9465A /* WPAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAnnotation.h; sourceTree = "<group>"; };
 		C54BEC991E6AB0E600A9465A /* WPAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAnnotation.m; sourceTree = "<group>"; };
-		C54BEC9F1E6AB31300A9465A /* MarqueeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeLabel.h; sourceTree = "<group>"; };
-		C54BECA01E6AB31300A9465A /* MarqueeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeLabel.m; sourceTree = "<group>"; };
-		C54BECA11E6AB31300A9465A /* messageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageView.h; sourceTree = "<group>"; };
-		C54BECA21E6AB31300A9465A /* messageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageView.m; sourceTree = "<group>"; };
-		C54BECA31E6AB31300A9465A /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifier.h; sourceTree = "<group>"; };
-		C54BECA41E6AB31300A9465A /* Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notifier.m; sourceTree = "<group>"; };
 		C54BECA81E6AB31F00A9465A /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
 		C54BECA91E6AB31F00A9465A /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
 		C54BECAB1E6AB32B00A9465A /* fu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fu.plist; sourceTree = "<group>"; };
@@ -102,8 +93,8 @@
 		C5959BA11E358BA400C07201 /* myBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5959BA51E358BA400C07201 /* myBaseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myBaseUITests.m; sourceTree = "<group>"; };
 		C5959BA71E358BA400C07201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5959BB41E358BD900C07201 /* FUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUViewController.h; sourceTree = "<group>"; };
-		C5959BB51E358BD900C07201 /* FUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUViewController.m; sourceTree = "<group>"; };
+		C5959BB41E358BD900C07201 /* FUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FUViewController.h; path = ../FUBaseProject/FUViewController.h; sourceTree = "<group>"; };
+		C5959BB51E358BD900C07201 /* FUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FUViewController.m; path = ../FUBaseProject/FUViewController.m; sourceTree = "<group>"; };
 		C5959BB81E358DA500C07201 /* AES256.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = AES256.php; sourceTree = "<group>"; };
 		C5959BB91E358DA500C07201 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
 		C5959BBA1E358DA500C07201 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
@@ -171,7 +162,6 @@
 		C54BEC891E6AAE9E00A9465A /* FUTools */ = {
 			isa = PBXGroup;
 			children = (
-				C54BEC9E1E6AB31300A9465A /* util */,
 				C54BEC901E6AB0E600A9465A /* FUMMLocationManager */,
 				C54BEC8D1E6AB06D00A9465A /* FUTools.h */,
 				C54BEC8E1E6AB06D00A9465A /* FUTools.m */,
@@ -205,19 +195,6 @@
 			path = CCLocation;
 			sourceTree = "<group>";
 		};
-		C54BEC9E1E6AB31300A9465A /* util */ = {
-			isa = PBXGroup;
-			children = (
-				C54BEC9F1E6AB31300A9465A /* MarqueeLabel.h */,
-				C54BECA01E6AB31300A9465A /* MarqueeLabel.m */,
-				C54BECA11E6AB31300A9465A /* messageView.h */,
-				C54BECA21E6AB31300A9465A /* messageView.m */,
-				C54BECA31E6AB31300A9465A /* Notifier.h */,
-				C54BECA41E6AB31300A9465A /* Notifier.m */,
-			);
-			path = util;
-			sourceTree = "<group>";
-		};
 		C5959B741E358BA100C07201 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +219,8 @@
 		C5959B7F1E358BA400C07201 /* myBase */ = {
 			isa = PBXGroup;
 			children = (
+				C5959BB41E358BD900C07201 /* FUViewController.h */,
+				C5959BB51E358BD900C07201 /* FUViewController.m */,
 				C5959B831E358BA400C07201 /* AppDelegate.h */,
 				C5959B841E358BA400C07201 /* AppDelegate.m */,
 				C5959B861E358BA400C07201 /* ViewController.h */,
@@ -289,8 +268,6 @@
 				C54BEC811E6AA6D200A9465A /* getOperatorsType */,
 				C54BEC7D1E6AA2E000A9465A /* BankNumberForName */,
 				C5959BB71E358DA500C07201 /* AES256 */,
-				C5959BB41E358BD900C07201 /* FUViewController.h */,
-				C5959BB51E358BD900C07201 /* FUViewController.m */,
 			);
 			path = FUBaseProject;
 			sourceTree = "<group>";
@@ -460,13 +437,10 @@
 				C54BEC881E6AAC6700A9465A /* FUGetAllSystemInfo.m in Sources */,
 				C54BEC841E6AA87F00A9465A /* FUGetOperatorsType.m in Sources */,
 				C54BECAA1E6AB31F00A9465A /* UIImage+scale.m in Sources */,
-				C54BECA51E6AB31300A9465A /* MarqueeLabel.m in Sources */,
 				C54BEC9C1E6AB0E600A9465A /* MMLocationManager.m in Sources */,
 				C5959BC01E358DA500C07201 /* NSString+AES256.m in Sources */,
 				C54BEC8F1E6AB06D00A9465A /* FUTools.m in Sources */,
-				C54BECA71E6AB31300A9465A /* Notifier.m in Sources */,
 				C54BEC801E6AA34D00A9465A /* FUBankDataDo.m in Sources */,
-				C54BECA61E6AB31300A9465A /* messageView.m in Sources */,
 				C5959B821E358BA400C07201 /* main.m in Sources */,
 				C5959BB61E358BD900C07201 /* FUViewController.m in Sources */,
 			);

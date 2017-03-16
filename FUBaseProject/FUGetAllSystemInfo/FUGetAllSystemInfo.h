@@ -55,10 +55,15 @@
 + (NSDate *)getNowDateFromatAnDate:(NSDate *)anyDate;
 
 
-+(NSString*) md5:(NSString*) str;
-//32位MD5加密方式
+////32位MD5加密方式
++ (NSString *)stringToMD5:(NSString *)str;
+//小写
 +(NSString *)getMd5_32Bit_String:(NSString *)srcString;
-
+//大写
++(NSString *)getMd5_32Bit_uppercaseString:(NSString *)srcString;
+#pragma mark 多重加密
++(NSString *)getMd5_32Bit_String:(NSString *)srcString with:(NSInteger)num;
++(NSString *)getMd5_32Bit_uppercaseString:(NSString *)srcString with:(NSInteger)num;
 
 +(NSString *)getAFID;
 

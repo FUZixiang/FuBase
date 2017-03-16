@@ -84,7 +84,7 @@
 {
     NSDate *date = [NSDate date];
     
-    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+//    NSTimeZone *zone = [NSTimeZone systemTimeZone];
     
 //    NSInteger interval = [zone secondsFromGMTForDate: date];
     
@@ -194,38 +194,99 @@
     NSDate* destinationDateNow = [[NSDate alloc] initWithTimeInterval:interval sinceDate:anyDate];
     return destinationDateNow;
 }
-+(NSString*) md5:(NSString*) str
+//+(NSString*) md5:(NSString*) str
+//
+//{
+//    
+//    const char *cStr = [str UTF8String];
+//    
+//    unsigned char result[CC_MD5_DIGEST_LENGTH];
+//    
+//    CC_MD5( cStr, strlen(cStr), result );
+//    NSMutableString *hash = [NSMutableString string];
+//    
+//    for(int i=0;i<CC_MD5_DIGEST_LENGTH;i++)
+//    {
+//        [hash appendFormat:@"%02X",result[i]];
+//    }
+//    
+//    return [hash lowercaseString];
+//    
+//}
+//32位MD5加密方式
+//+(NSString *)getMd5_32Bit_String:(NSString *)srcString
+//{
+//    const char *cStr = [srcString UTF8String];
+//    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+//    // CC_MD5( cStr, strlen(cStr), digest ); 这里的用法明显是错误的，但是不知道为什么依然可以在网络上得以流传。当srcString中包含空字符（\0）时
+//    CC_MD5( cStr, strlen(cStr), digest );
+//    NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+//    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+//        [result appendFormat:@"%02x", digest[i]];
+//    
+//    return result;
+//}
 
++ (NSString *)stringToMD5:(NSString *)str
 {
     
-    const char *cStr = [str UTF8String];
+    //1.首先将字符串转换成UTF-8编码, 因为MD5加密是基于C语言的,所以要先把字符串转化成C语言的字符串
+    const char *fooData = [str UTF8String];
     
+    //2.然后创建一个字符串数组,接收MD5的值
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     
-    CC_MD5( cStr, strlen(cStr), result );
-    NSMutableString *hash = [NSMutableString string];
+    //3.计算MD5的值, 这是官方封装好的加密方法:把我们输入的字符串转换成16进制的32位数,然后存储到result中
+    CC_MD5(fooData, (CC_LONG)strlen(fooData), result);
+    /**
+     第一个参数:要加密的字符串
+     第二个参数: 获取要加密字符串的长度
+     第三个参数: 接收结果的数组
+     */
     
-    for(int i=0;i<CC_MD5_DIGEST_LENGTH;i++)
-    {
-        [hash appendFormat:@"%02X",result[i]];
+    //4.创建一个字符串保存加密结果
+    NSMutableString *saveResult = [NSMutableString string];
+    
+    //5.从result 数组中获取加密结果并放到 saveResult中
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [saveResult appendFormat:@"%02x", result[i]];
     }
-    
-    return [hash lowercaseString];
-    
+    /*
+     x表示十六进制，%02X  意思是不足两位将用0补齐，如果多余两位则不影响
+     NSLog("%02X", 0x888);  //888
+     NSLog("%02X", 0x4); //04
+     */
+    return saveResult;
 }
-//32位MD5加密方式
+#pragma mark 小写
 +(NSString *)getMd5_32Bit_String:(NSString *)srcString
 {
-    const char *cStr = [srcString UTF8String];
-    unsigned char digest[CC_MD5_DIGEST_LENGTH];
-    // CC_MD5( cStr, strlen(cStr), digest ); 这里的用法明显是错误的，但是不知道为什么依然可以在网络上得以流传。当srcString中包含空字符（\0）时
-    CC_MD5( cStr, strlen(cStr), digest );
-    NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-        [result appendFormat:@"%02x", digest[i]];
-    
-    return result;
+    return [[self class] stringToMD5:srcString];
 }
++(NSString *)getMd5_32Bit_String:(NSString *)srcString with:(NSInteger)num
+{
+    NSString *strMD5=srcString;
+    for (NSInteger i=0; i< num; i++) {
+        strMD5 = [[self class] stringToMD5:strMD5];
+    }
+    return strMD5;
+}
+
+#pragma mark 大写
++(NSString *)getMd5_32Bit_uppercaseString:(NSString *)srcString
+{
+    return [[[self class] stringToMD5:srcString] uppercaseString];
+}
++(NSString *)getMd5_32Bit_uppercaseString:(NSString *)srcString with:(NSInteger)num
+{
+    NSString *strMD5=srcString;
+    for (NSInteger i=0; i< num; i++) {
+        strMD5 = [[[self class] stringToMD5:strMD5] uppercaseString];
+    }
+    return strMD5;
+}
+
+
 
 +(NSString *)getAFID
 {

@@ -106,13 +106,14 @@ NSString* stringJudge(NSString* str)
     {
         if([[[UIDevice currentDevice] systemVersion] floatValue]<7.0)
         {
-            CGSize mLblHieht = [name
-                                sizeWithFont:font
-                                constrainedToSize:CGSizeMake(100,1000)
-                                lineBreakMode:NSLineBreakByWordWrapping];
-            textSize = mLblHieht;
-            
-            
+            NSStringDrawingOptions option = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
+            NSDictionary *attributes = [NSDictionary dictionaryWithObject:font forKey:NSFontAttributeName];
+            CGRect rect = [name boundingRectWithSize:CGSizeMake(100, 1000)
+                                             options:option
+                                          attributes:attributes
+                                             context:nil];
+            textSize = rect.size;
+ 
         }
         else{
         NSStringDrawingOptions option = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
@@ -823,9 +824,14 @@ NSString* stringJudge(NSString* str)
 {
     CGSize labelSize = {0, 0};
     CGFloat fontOfSize=label.font.pointSize;
-    labelSize = [str sizeWithFont:[UIFont systemFontOfSize:fontOfSize]
-                constrainedToSize:CGSizeMake(label.bounds.size.width, 5000)
-                    lineBreakMode:NSLineBreakByTruncatingTail];
+    
+    NSStringDrawingOptions option = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
+    NSDictionary *attributes = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:fontOfSize] forKey:NSFontAttributeName];
+    CGRect rect = [str boundingRectWithSize:CGSizeMake(label.bounds.size.width, 5000)
+                                     options:option
+                                  attributes:attributes
+                                     context:nil];
+    labelSize = rect.size;
     
     //14 为UILabel的字体大小
     
@@ -844,9 +850,14 @@ NSString* stringJudge(NSString* str)
 {
     CGSize labelSize = {0, 0};
     CGFloat fontOfSize=label.font.pointSize;
-    labelSize = [str sizeWithFont:[UIFont systemFontOfSize:fontOfSize]
-                constrainedToSize:CGSizeMake(newWidth, 5000)
-                    lineBreakMode:NSLineBreakByTruncatingTail];
+    
+    NSStringDrawingOptions option = NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
+    NSDictionary *attributes = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:fontOfSize] forKey:NSFontAttributeName];
+    CGRect rect = [str boundingRectWithSize:CGSizeMake(newWidth, 5000)
+                                    options:option
+                                 attributes:attributes
+                                    context:nil];
+    labelSize = rect.size;
     
     //14 为UILabel的字体大小
     
