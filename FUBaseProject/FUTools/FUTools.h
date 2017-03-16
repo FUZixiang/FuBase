@@ -17,8 +17,14 @@
 
 #import "CCLocationManager.h"
 
-
-
+//打标签
+//git tag 'v1.0.5'
+//上传
+//git push --tags
+//检查
+//pod spec lint --allow-warnings FUBaseProject.podspec
+//上传pod
+//pod trunk push FUBaseProject.podspec
 
 NSString* stringJudge(NSString* str);
 
