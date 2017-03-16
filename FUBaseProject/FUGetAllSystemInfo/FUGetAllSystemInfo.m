@@ -8,6 +8,8 @@
 
 #import "FUGetAllSystemInfo.h"
 
+#import <CommonCrypto/CommonDigest.h>
+#import <AdSupport/AdSupport.h>
 #import <sys/utsname.h>
 
 @implementation FUGetAllSystemInfo
