@@ -12,11 +12,8 @@
 #import <CFNetwork/CFNetwork.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-//#import <CoreTelephony/CoreTelephonyDefines.h>
 #import <Security/Security.h>
 #import <CoreGraphics/CoreGraphics.h>
-//#import "frameworkerHeader.h"
-//#import "MobClick.h"
 
 #import "CCLocationManager.h"
 

@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreTelephony/CTCarrier.h>
-#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+
 
 @interface FUGetOperatorsType : NSObject
 

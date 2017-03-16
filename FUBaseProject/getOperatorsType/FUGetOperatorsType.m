@@ -7,7 +7,8 @@
 //
 
 #import "FUGetOperatorsType.h"
-
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 @implementation FUGetOperatorsType
 // 获取运营商类型
 + (NSString *)getOperatorsType

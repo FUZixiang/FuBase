@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import <UIKit/UIKit.h>
-#import <CommonCrypto/CommonDigest.h>
-#import <AdSupport/AdSupport.h>
+
 //#import "frameworkerHeader.h"
 //    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 @interface FUGetAllSystemInfo : NSObject
