@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FUBaseProject"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "test"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/FUZixiang/FuBase.git", :tag => "v1.0.5" }
+  s.source       = { :git => "https://github.com/FUZixiang/FuBase.git", :tag => "v1.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "FUBaseProject", "FUBaseProject/**/*.{h,m}"
+  s.source_files  = "FUBaseProject", "FUBaseProject/**/*.{h,m,plist,json,php,java}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
